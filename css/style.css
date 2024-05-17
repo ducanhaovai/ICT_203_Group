@@ -316,8 +316,8 @@ img {
 .did-social {
     height: 100%;
     display: flex;
-    justify-content: left !important;
-    align-items: flex-end !important;
+    justify-content: left;
+    align-items: flex-end;
     padding-bottom: 5px;
 }
 
@@ -329,4 +329,42 @@ img {
 
 .p-0-40 {
     padding: 0 40px;
+}
+
+@media only screen and (max-width: 576px) {
+    .did-page {
+        justify-content: center !important;
+    }
+}
+
+.show-575 {
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .show-575 {
+        display: block !important;
+    }
+
+    .hidden-575 {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .did-page a {
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .p-r-20 {
+        padding-right: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .collapse.navbar-collapse ul li {
+        margin: 0;
+    }
 }
