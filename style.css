@@ -58,13 +58,103 @@ p {
     background-color: unset;
     -webkit-box-shadow: unset;
     box-shadow: unset !important;
-    padding: 10px 12px;
+    padding: 10px 12px !important;
 }
 
 .navbar a {
     cursor: pointer;
     letter-spacing: 3px;
 }
+
+.menu-did,
+.login-cart {
+    display: none;
+}
+
+
+#toggle {
+    display: none;
+}
+
+
+.collapse {
+    display: none;
+}
+
+
+.collapse {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+    padding: 8px 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #f0f0f0;
+}
+
+@media (min-width: 992px) {
+    .collapse {
+        display: block !important;
+        position: static;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .collapse {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar-toggler {
+        display: block;
+        cursor: pointer;
+    }
+
+    #toggle:checked~.collapse {
+        display: block;
+    }
+}
+
 
 .navbar-brand.desktop {
     letter-spacing: 0px;
@@ -94,9 +184,15 @@ p {
     margin: 0;
 }
 
+.collapse.navbar-collapse ul li:last-child {
+    margin: 0;
+}
+
 .collapse.navbar-collapse ul li {
     margin: 0 12px;
 }
+
+
 
 
 /*----- BODY -----*/
