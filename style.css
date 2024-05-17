@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: black;
+    
+}
+
+/*----- NAVBAR  -----*/
+body{
+    max-width: 1690px;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    letter-spacing: 3px;
+    color: #212529;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    letter-spacing: 3px;
+    color: #212529;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.menu-did {
+    justify-content: center;
+    margin: 0;
+    width: 65%;
+}
+.navbar-expand-lg .navbar-collapse{
+    display: flex;
+    list-style: none;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+
+.navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10px 12px;
+}
+.navbar {
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: unset;
+    -webkit-box-shadow: unset ;
+    box-shadow: unset;
+    padding: 10px 12px;
+}
+
+.navbar a {
+    cursor: pointer;
+}
+
+.navbar-brand.desktop {
+    letter-spacing: 0px;
+    font-size: 24px;
+    padding: 0;
+    color: #212529;
+    font-weight: 600;
+    width: 10%;
+    padding-left: 8px;
+}   
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.navbar-nav {
+    font-size: 12px;
+}
+
+
+/*----- BODY -----*/
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    line-height: 1.6;
+}
+
