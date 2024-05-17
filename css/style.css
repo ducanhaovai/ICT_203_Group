@@ -331,6 +331,26 @@ img {
     padding: 0 40px;
 }
 
+.status-tag-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+}
+
+.status-tag-wrapper .status-tag {
+    min-width: 140px;
+    background: #000;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    width: 100%;
+    color: #fff;
+    margin-top: 0;
+    text-align: center;
+}
+
 @media only screen and (max-width: 576px) {
     .did-page {
         justify-content: center !important;
@@ -366,5 +386,217 @@ img {
 @media only screen and (max-width: 992px) {
     .collapse.navbar-collapse ul li {
         margin: 0;
+    }
+}
+
+/*--- Detail ---*/
+.lightgallery {
+    padding: 0;
+}
+
+.box-item-img-detail {
+    position: relative;
+    max-width: 510px;
+    background-size: cover !important;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 40px;
+    min-height: 300px;
+}
+
+.center-content {
+    display: block;
+    top: 50% !important;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 8px;
+    min-height: 388px;
+}
+
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    top: 0;
+}
+
+.local-branch {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+}
+
+.mb_15 {
+    margin-bottom: 15px !important;
+}
+
+.title-prd {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 24px;
+}
+
+.price-prd {
+    font-weight: 500;
+}
+
+.color-red {
+    color: #ff0000;
+}
+
+.description-prd {
+    font-size: 12px;
+    line-height: 1.36;
+    letter-spacing: .09px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    color: #212529;
+
+}
+
+.mb_10 {
+    margin-bottom: 10px !important;
+}
+
+.description-prd br {
+    display: none;
+}
+
+.colors-prd {
+    display: flex;
+    bottom: 2em;
+    right: 2em;
+    z-index: 3;
+}
+
+.color-prd {
+    height: 36px;
+    width: 36px;
+    margin-left: 0.5em;
+    border-radius: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.color-prd.selected {
+    box-shadow: 0px 0px 0px 1px white inset !important;
+    border: solid 1px #000 !important;
+}
+
+.color-prd {
+    height: 36px;
+    width: 36px;
+    margin-left: 0.5em;
+    border-radius: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.option-prd label {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.sizes-prd {
+    display: flex;
+    bottom: 2em;
+    right: 2em;
+    z-index: 3;
+    text-transform: uppercase;
+}
+
+.size-prd.selected {
+    background: #212529;
+    color: #fff;
+    box-shadow: 0px 0px 0px 1px white inset !important;
+    border: solid 1px #212529 !important;
+}
+
+.size-prd {
+    height: 36px;
+    width: 36px;
+    margin-left: 0.5em;
+    border-radius: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    color: #212529;
+}
+
+.coming-soon {
+    width: 100%;
+    border: 0;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    padding: 0 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #212529;
+    cursor: pointer;
+    transition: 0.4s;
+    justify-content: center;
+}
+.input-group input {
+	border-radius: unset !important;
+}
+
+.input-group input[type='button'] {
+    background-color: #eeeeee;
+    min-width: 38px;
+    width: auto;
+    transition: all 300ms ease;
+}
+
+.change-quantity .input-group {
+    width: 60%;
+}
+
+.change-quantity {
+    display: flex;
+}
+.input-group .quantity-field {
+    height: 38px;
+    text-align: center;
+    width: 40px;
+    display: inline-block;
+    font-size: 13px;
+    resize: vertical;
+}
+
+@media only screen and (max-width: 992px) {
+    .center-content {
+        margin-bottom: 30px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+@media only screen and (max-width: 670px) {
+    .center-content {
+        top: unset !important;
+        -webkit-transform: unset !important;
+        -ms-transform: unset !important;
+        transform: unset !important;
     }
 }
