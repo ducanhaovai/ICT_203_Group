@@ -64,16 +64,101 @@
     </nav>
     <div class="container-fluid pt-100 mb-90">
         <div class="row" id="cart">
-            <div class="col-12 col-md-2 col-lg-3"></div>
-            <div class="col-12 col-md-8 col-lg-6">
-                <div class="content-null">
-                    <h1>SHOPPING CART</h1>
-                    <p>Your shopping cart is empty.</p>
-                    <p>Go to <a href="https://did-studios.com/all">Homapage</a> to shopping</p>
+            <div class="col-12">
+                <header class="entry-header">
+                    <h1 class="entry-title">Cart</h1>
+                </header>
+            </div>
+            <div class="col-12 col-lg-12 col-xl-8 mb_15">
+                <h1 class="cart-title">ITEMS</h1>
+                <div class="cart-list-item">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">PRODUCT</th>
+                                    <th class="th-name-product" scope="col"></th>
+                                    <th class="th-price" scope="col">PRICE</th>
+                                    <th class="th-quantity" scope="col">QUANTITY</th>
+                                    <th class="th-price" scope="col">SUBTOTAL</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="item-id-55">
+                                    <td class="box-item-img-cart"
+                                        style="background: url(https://did-studios.com/) 50% no-repeat">
+                                        <a class="custom-a" href="https://did-studios.com/product/azjk-176">
+                                            <img class="img-responsive"
+                                                src="https://did-studios.com/uploads/by_product/sku-55/c07cea27f5d9088cddb5f5baac167fe1.JPG">
+                                        </a>
+                                    </td>
+                                    <td class="cart-name-size">
+                                        <a class="custom-a" href="https://did-studios.com/product/azjk-176">AZJK/176</a>
+                                        <p class="mb_0">Size: OS</p>
+                                        <p class="mb_0">Color: 176</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <p class=""></p>
+                                            <p class="">2,000,000 VND</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-group">
+                                            <input type="button" value="-" class="button-minus" data-field="quantity">
+                                            <input item-size="OS" type="number" step="1" min="1" max="20" value="1"
+                                                name="quantity" class="quantity-field">
+                                            <input type="button" value="+" class="button-plus" data-field="quantity">
+                                        </div>
+
+                                    </td>
+                                    <td id="item-subToal-55">4,000,000 VND</td>
+                                    <td>
+                                        <i data-toggle="modal" data-target="#modalDelete" item-name="AZJK/176"
+                                            item-id="55" class="remove-item-cart far fa-times-circle">
+                                        </i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="action-cart action-clear">Clear Cart</span></td>
+                                    <td><span class="action-cart action-update">Update Cart</span></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-2 col-lg-3"></div>
+            <div class="col-12 col-lg-12 col-xl-4 mb_15">
+                <h1 class="cart-title">CART TOTALS</h1>
+                <div class="cart-total">
+                    <div class="cart-subTotal">
+                        <span class="span-l">SUBTOTAL</span>
+                        <span class="span-r">4,000,000 VND</span>
+                    </div>
+                    <div class="cart-shipping">
+                        <span class="span-l">SHIPPING</span>
+                        <span class="span-r">Shipping costs are calculated during checkout.</span>
+                    </div>
+                    <div class="cart-sumTotal">
+                        <span class="span-l">TOTAL</span>
+                        <span class="span-r">4,000,000 VND</span>
+                    </div>
+                    <div class="cart-to-checkout">
+
+                        <span class="span-r">
+                            <button href="" class="button-85">
+                                Proceed to checkout</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modalDeleteLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -138,5 +223,6 @@
     </footer>
 
 </body>
+<script src="/js/script.js"></script>
 
 </html>
