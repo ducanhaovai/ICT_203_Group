@@ -63,6 +63,17 @@
         </div>
     </nav>
     <div class="container-fluid pt-100 mb-90">
+        <div class="alert-t">
+            <div class="toast-content">
+                <i class="fas fa-solid fa-check check"></i>
+                <div class="message">
+                    <span class="text text-1">Success</span>
+                    <span class="text text-2">Your message has been sent!</span>
+                </div>
+            </div>
+            <i class="fa-solid fa-xmark close"></i>
+            <div class="progress"></div>
+        </div>
         <div class="row" id="checkout">
             <div class="col-12">
                 <header class="entry-header">
@@ -705,7 +716,10 @@
                     Enter your address to view payment options.
                 </p>
                 <div class="place-order">
-                    <button class="s-button">Place Order</button>
+
+                    <button class="s-button" id="submitcheck">
+                        <a>Place Order</a>
+                    </button>
                 </div>
             </div>
         </div>
