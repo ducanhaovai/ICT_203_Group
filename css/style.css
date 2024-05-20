@@ -707,12 +707,6 @@ textarea {
     letter-spacing: 2px;
 }
 
-.cart-title {
-    font-size: 15px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
 
 .cart-list-item tr {
     font-size: 12px;
@@ -1061,4 +1055,120 @@ input[type=number]::-webkit-outer-spin-button {
 
 .alert-t.active~button {
     pointer-events: none;
+}
+
+/* --- Checkout ---*/
+#checkout {
+    color: #212529 !important;
+    font-size: 12px;
+}
+
+#checkout .cart-title {
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 7px;
+    width: 100%;
+    font-weight: 500;
+}
+
+.form-group.required label:not(:empty):not(.form-check-label)::after {
+    content: ' *';
+    color: #ff0000;
+}
+
+.cart-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.list-item {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background: #fff;
+    text-transform: uppercase;
+}
+
+.list-item .row {
+    padding: 10px;
+}
+
+#checkout .content-left {
+    padding: 0 !important;
+    width: unset;
+}
+
+.box-item-img-checkout {
+    position: relative;
+    max-width: 100px;
+    background-size: cover !important;
+    overflow: hidden;
+    margin: auto;
+    min-height: 130px;
+}
+
+.content-right {
+    width: calc(100% - 100px) !important;
+    padding-left: 10px !important;
+    display: inline-flex;
+}
+
+.content-right .item-detail {
+    width: 70%;
+    text-transform: uppercase;
+}
+
+.content-right h1 {
+    font-size: 12px;
+}
+
+.custom-a {
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #212529;
+}
+
+.list-item .shipping {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    display: flex;
+}
+
+.list-item .w-90 {
+    text-transform: none;
+}
+
+.w-90 {
+    width: 90% !important;
+    text-align: end;
+}
+
+.list-item .total {
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+    display: flex;
+}
+
+.mt_20 {
+    margin-top: 20px;
+}
+
+.s-button {
+    width: 100%;
+    border: 0;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    padding: 0 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #212529;
+    cursor: pointer;
+    transition: 0.4s;
+    justify-content: center;
 }
